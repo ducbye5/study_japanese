@@ -23,3 +23,8 @@ Route::get('/hiragana',[
 	'uses'=>'HiraganaController@index',
 	'as' => 'hiragana_view'
 ]);
+
+Route::post('/hiragana',[
+	'uses'=>'HiraganaController@checkAnswer',
+	'as' => 'hiragana_check_answer'
+]);
