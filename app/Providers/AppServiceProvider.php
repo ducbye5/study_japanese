@@ -24,8 +24,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'App\Repository\Interface\HiraganasRepositoryInterface',
-            'App\Repository\HiraganasRepository'
+            'App\Repositories\Interfaces\HiraganasRepositoryInterface',
+            'App\Repositories\HiraganasRepository'
         );
     }
 }
