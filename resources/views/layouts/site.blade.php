@@ -10,7 +10,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
+        <script type="text/javascript" src="{{ asset('js/jquery-3.2.0.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+        
     </head>
     <body>
         <div class="container">
@@ -50,5 +52,35 @@
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+    $(function(){
+        var result_A = $('#A'),
+            result_B = $('#B'),
+            result_C = $('#C'),
+            result_D = $('#D');
+        result_A.click(function(){
+            var text = $(this).text();
+            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            // $(this).removeClass('btn-outline-primary');
+            // $(this).addClass('btn-success');
+            $('#form').submit();
+        });
+        result_B.click(function(){
+            var text = $(this).text();
+            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            $('#form').submit();
+        });
+        result_C.click(function(){
+            var text = $(this).text();
+            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            $('#form').submit();
+        });
+        result_D.click(function(){
+            var text = $(this).text();
+            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            $('#form').submit();
+        });
+    });
+</script>
 </html>
 
