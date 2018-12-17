@@ -26,10 +26,12 @@ class HiraganaController extends Controller
     	$input = $request->all();
     	$result = $this->hiraganaService->checkAnswer($input);
     	if($result){
-    		\Session::flash('success','The answer is TRUE. Please click the NEXT button for the next question');
+    		$url = $input['nextPage'];
+    		$url = str_replace('http://localhost/study_japanese/public/','',$url);
+    		//\Session::flash('success','The answer is TRUE. Please click the NEXT button for the next question');
+    		return redirect(url($url));
     	}else{
-    		\Session::flash('false','The answer is WRONG. Please click on the RESTART button to start another question');
+    		return redirect()->route('hiragana_view');
     	}
-    	return redirect()->back();
     }
 }
