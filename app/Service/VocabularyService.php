@@ -36,6 +36,9 @@ class VocabularyService
 		shuffle($list_select_result);
 		$view = 'Vocabulary';
 		$next_page = $question_and_answer->nextPageUrl();
+		if($next_page == ''){
+			return $status='finish';
+		}
 		$result = [
 			'view' => $view,
 			'data' => [

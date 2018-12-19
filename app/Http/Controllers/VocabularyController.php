@@ -17,9 +17,13 @@ class VocabularyController extends Controller
 
     public function index(){
     	$result = $this->vocabularyService->index();
-        $view = $result['view'];
-        $data = $result['data'];
-    	return view($view,['data'=>$data]);
+        if($result == 'finish'){
+            return redirect()->route('vocabulary_view');
+        }else{
+            $view = $result['view'];
+            $data = $result['data'];
+    	   return view($view,['data'=>$data]);
+        }
     }
 
     public function checkAnswer(Request $request){

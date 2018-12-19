@@ -17,9 +17,13 @@ class HiraganaController extends Controller
 
     public function index(){
     	$result = $this->hiraganaService->index();
-        $view = $result['view'];
-        $data = $result['data'];
-    	return view($view,['data'=>$data]);
+        if($result == 'finish'){
+            return redirect()->route('hiragana_view');
+        }else{    
+            $view = $result['view'];
+            $data = $result['data'];
+    	   return view($view,['data'=>$data]);
+        }
     }
 
     public function checkAnswer(Request $request){
