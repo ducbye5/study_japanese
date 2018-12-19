@@ -27,5 +27,9 @@ class AppServiceProvider extends ServiceProvider
             'App\Repositories\Interfaces\HiraganasRepositoryInterface',
             'App\Repositories\HiraganasRepository'
         );
+        $this->app->bind(
+            'App\Repositories\Interfaces\VocabulariesRepositoryInterface',
+            'App\Repositories\VocabulariesRepository'
+        );
     }
 }

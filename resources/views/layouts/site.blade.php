@@ -41,8 +41,7 @@
                         <a class="btn btn-outline-danger" href="{{ route('hiragana_view') }}">Hiragana</a>
                         <a class="btn btn-outline-danger" href="">Katakana</a>
                         <a class="btn btn-outline-danger" href="">Kanji</a>
-                        <a class="btn btn-outline-danger" href="">Hiragana & Katakana</a>
-                        <a class="btn btn-outline-danger" href="">Vocabulary</a>
+                        <a class="btn btn-outline-danger" href="{{ route('vocabulary_view') }}">Vocabulary</a>
                         <hr>
                     </div>
                 </div>
@@ -54,31 +53,29 @@
     </body>
     <script type="text/javascript">
     $(function(){
-        var result_A = $('#A'),
-            result_B = $('#B'),
-            result_C = $('#C'),
-            result_D = $('#D');
+        var result_A = $('.A'),
+            result_B = $('.B'),
+            result_C = $('.C'),
+            result_D = $('.D');
         result_A.click(function(){
             var text = $(this).text();
-            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
-            // $(this).removeClass('btn-outline-primary');
-            // $(this).addClass('btn-success');
-            $('#form').submit();
+            $('.answer').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            $('.form').submit();
         });
         result_B.click(function(){
             var text = $(this).text();
-            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
-            $('#form').submit();
+            $('.answer').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            $('.form').submit();
         });
         result_C.click(function(){
             var text = $(this).text();
-            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
-            $('#form').submit();
+            $('.answer').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            $('.form').submit();
         });
         result_D.click(function(){
             var text = $(this).text();
-            $('#select_input').append('<input type="hidden" name="select_answer" value="'+text+'">');
-            $('#form').submit();
+            $('.answer').append('<input type="hidden" name="select_answer" value="'+text+'">');
+            $('.form').submit();
         });
     });
 </script>

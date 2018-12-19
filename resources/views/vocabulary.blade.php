@@ -12,9 +12,9 @@
 			<div class="col-md-6 btn btn-outline-primary D">{{ $data['select'][3] }}</div>
 		</div>
 	</div>
-	<form method="post" action="{{ route('hiragana_check_answer') }}" class="form">
+	<form method="post" action="{{ route('vocabulary_check_answer') }}" class="form">
 		@csrf
-		<input type="hidden" name="result" value="{{ $data['answer'] }}">
+		<input type="hidden" name="result" class="answer" value="{{ $data['answer'] }}">
 		<input type="hidden" name="nextPage" value="{{ $data['next_page'] }}">
 	</form>
 </div>

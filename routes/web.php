@@ -28,3 +28,13 @@ Route::post('/hiragana',[
 	'uses'=>'HiraganaController@checkAnswer',
 	'as' => 'hiragana_check_answer'
 ]);
+
+Route::get('/vocabulary',[
+	'uses'=>'VocabularyController@index',
+	'as' => 'vocabulary_view'
+]);
+
+Route::post('/vocabulary',[
+	'uses'=>'VocabularyController@checkAnswer',
+	'as' => 'vocabulary_check_answer'
+]);
