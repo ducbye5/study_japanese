@@ -14,7 +14,7 @@
 	</div>
 	<form method="post" action="{{ route('hiragana_check_answer') }}" class="form">
 		@csrf
-		<input type="hidden" name="result" value="{{ $data['answer'] }}">
+		<input type="hidden" name="result" class="answer" value="{{ $data['answer'] }}">
 		<input type="hidden" name="nextPage" value="{{ $data['next_page'] }}">
 	</form>
 </div>
