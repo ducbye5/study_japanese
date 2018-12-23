@@ -186,5 +186,105 @@ return [
 			'characters' => 'ん',
 			'pronunciation' => '/n/'
 		],
+		46 => [
+			'characters' => 'が',
+			'pronunciation' => '/ga/'
+		],
+		47 => [
+			'characters' => 'ぎ',
+			'pronunciation' => '/gi/'
+		],
+		48 => [
+			'characters' => 'ぐ',
+			'pronunciation' => '/gu/'
+		],
+		49 => [
+			'characters' => 'げ',
+			'pronunciation' => 'ge'
+		],
+		50 => [
+			'characters' => 'ご',
+			'pronunciation' => '/go/'
+		],
+		51 => [
+			'characters' => 'ざ',
+			'pronunciation' => '/za/'
+		],
+		52 => [
+			'characters' => 'じ',
+			'pronunciation' => '/ji/'
+		],
+		53 => [
+			'characters' => 'ず',
+			'pronunciation' => '/zu/'
+		],
+		54 => [
+			'characters' => 'ぜ',
+			'pronunciation' => '/ze/'
+		],
+		55 => [
+			'characters' => 'ぞ',
+			'pronunciation' => '/zo/'
+		],
+		56 => [
+			'characters' => 'だ',
+			'pronunciation' => '/da/'
+		],
+		57 => [
+			'characters' => 'ぢ',
+			'pronunciation' => '/ji/'
+		],
+		58 => [
+			'characters' => 'づ',
+			'pronunciation' => '/zu/'
+		],
+		59 => [
+			'characters' => 'で',
+			'pronunciation' => '/de/'
+		],
+		60 => [
+			'characters' => 'ど',
+			'pronunciation' => '/do/'
+		],
+		61 => [
+			'characters' => 'ば',
+			'pronunciation' => '/ba/'
+		],
+		62 => [
+			'characters' => 'び',
+			'pronunciation' => '/bi/'
+		],
+		63 => [
+			'characters' => 'ぶ',
+			'pronunciation' => '/bu/'
+		],
+		64 => [
+			'characters' => 'べ',
+			'pronunciation' => '/be/'
+		],
+		65 => [
+			'characters' => 'ぼ',
+			'pronunciation' => 'bo'
+		],
+		66 => [
+			'characters' => 'ぱ',
+			'pronunciation' => 'pa'
+		],
+		67 => [
+			'characters' => 'ぴ',
+			'pronunciation' => 'pi'
+		],
+		68 => [
+			'characters' => 'ぷ',
+			'pronunciation' => 'pu'
+		],
+		69 => [
+			'characters' => 'ぺ',
+			'pronunciation' => 'pe'
+		],
+		70 => [
+			'characters' => 'ぽ',
+			'pronunciation' => 'po'
+		],
 	],
 ];
