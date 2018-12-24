@@ -36,7 +36,7 @@ return [
 		],
 		8 => [
 			'characters' => 'け',
-			'pronunciation' => 'ke'
+			'pronunciation' => '/ke/'
 		],
 		9 => [
 			'characters' => 'こ',
@@ -120,7 +120,7 @@ return [
 		],
 		29 => [
 			'characters' => 'ほ',
-			'pronunciation' => 'ho'
+			'pronunciation' => '/ho/'
 		],
 		30 => [
 			'characters' => 'ま',
@@ -200,7 +200,7 @@ return [
 		],
 		49 => [
 			'characters' => 'げ',
-			'pronunciation' => 'ge'
+			'pronunciation' => '/ge/'
 		],
 		50 => [
 			'characters' => 'ご',
@@ -264,27 +264,27 @@ return [
 		],
 		65 => [
 			'characters' => 'ぼ',
-			'pronunciation' => 'bo'
+			'pronunciation' => '/bo/'
 		],
 		66 => [
 			'characters' => 'ぱ',
-			'pronunciation' => 'pa'
+			'pronunciation' => '/pa/'
 		],
 		67 => [
 			'characters' => 'ぴ',
-			'pronunciation' => 'pi'
+			'pronunciation' => '/pi/'
 		],
 		68 => [
 			'characters' => 'ぷ',
-			'pronunciation' => 'pu'
+			'pronunciation' => '/pu/'
 		],
 		69 => [
 			'characters' => 'ぺ',
-			'pronunciation' => 'pe'
+			'pronunciation' => '/pe/'
 		],
 		70 => [
 			'characters' => 'ぽ',
-			'pronunciation' => 'po'
+			'pronunciation' => '/po/'
 		],
 	],
 ];
