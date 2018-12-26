@@ -286,5 +286,149 @@ return [
 			'characters' => 'ぽ',
 			'pronunciation' => '/po/'
 		],
+		71 => [
+			'characters' => 'きゃ',
+			'pronunciation' => '/kya/'
+		],
+		72 => [
+			'characters' => 'きゅ',
+			'pronunciation' => '/kyu/'
+		],
+		73 => [
+			'characters' => 'きょ',
+			'pronunciation' => '/kyo/'
+		],
+		74 => [
+			'characters' => 'しゃ',
+			'pronunciation' => '/sha/'
+		],
+		75 => [
+			'characters' => 'しゅ',
+			'pronunciation' => '/shu/'
+		],
+		76 => [
+			'characters' => 'しょ',
+			'pronunciation' => '/sho/'
+		],
+		77 => [
+			'characters' => 'ちゃ',
+			'pronunciation' => '/cha/'
+		],
+		78 => [
+			'characters' => 'ちゅ',
+			'pronunciation' => '/chu/'
+		],
+		79 => [
+			'characters' => 'ちょ',
+			'pronunciation' => '/cho/'
+		],
+		80 => [
+			'characters' => 'にゃ',
+			'pronunciation' => '/nya/'
+		],
+		81 => [
+			'characters' => 'にゅ',
+			'pronunciation' => '/nyu/'
+		],
+		82 => [
+			'characters' => 'にょ',
+			'pronunciation' => '/nyo/'
+		],
+		83 => [
+			'characters' => 'ひゃ',
+			'pronunciation' => '/hya/'
+		],
+		84 => [
+			'characters' => 'ひゅ',
+			'pronunciation' => '/hyu/'
+		],
+		85 => [
+			'characters' => 'ひょ',
+			'pronunciation' => '/hyo/'
+		],
+		86 => [
+			'characters' => 'みゃ',
+			'pronunciation' => '/mya/'
+		],
+		87 => [
+			'characters' => 'みゅ',
+			'pronunciation' => '/myu/'
+		],
+		88 => [
+			'characters' => 'みょ',
+			'pronunciation' => '/myo/'
+		],
+		89 => [
+			'characters' => 'りゃ',
+			'pronunciation' => '/rya/'
+		],
+		90 => [
+			'characters' => 'りゅ',
+			'pronunciation' => '/ryu/'
+		],
+		91 => [
+			'characters' => 'りょ',
+			'pronunciation' => '/ryo/'
+		],
+		92 => [
+			'characters' => 'ぎゃ',
+			'pronunciation' => '/gya/'
+		],
+		93 => [
+			'characters' => 'ぎゅ',
+			'pronunciation' => '/gyu/'
+		],
+		94 => [
+			'characters' => 'ぎょ',
+			'pronunciation' => '/gyo/'
+		],
+		95 => [
+			'characters' => 'じゃ',
+			'pronunciation' => '/ja/'
+		],
+		96 => [
+			'characters' => 'じゅ',
+			'pronunciation' => '/ju/'
+		],
+		97 => [
+			'characters' => 'じょ',
+			'pronunciation' => '/jo/'
+		],
+		98 => [
+			'characters' => 'ぢゃ',
+			'pronunciation' => '/ja/'
+		],
+		99 => [
+			'characters' => 'ぢゅ',
+			'pronunciation' => '/ju/'
+		],
+		100 => [
+			'characters' => 'ぢょ',
+			'pronunciation' => '/jo/'
+		],
+		101 => [
+			'characters' => 'びゃ',
+			'pronunciation' => '/bya/'
+		],
+		102 => [
+			'characters' => 'びゅ',
+			'pronunciation' => '/byu/'
+		],
+		103 => [
+			'characters' => 'びょ',
+			'pronunciation' => '/byo/'
+		],
+		104 => [
+			'characters' => 'ぴゃ',
+			'pronunciation' => '/pya/'
+		],
+		105 => [
+			'characters' => 'ぴゅ',
+			'pronunciation' => '/pyu/'
+		],
+		106 => [
+			'characters' => 'ぴょ',
+			'pronunciation' => '/pyo/'
+		],
 	],
 ];
