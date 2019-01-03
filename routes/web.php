@@ -29,6 +29,16 @@ Route::post('/hiragana',[
 	'as' => 'hiragana_check_answer'
 ]);
 
+Route::get('/katakana',[
+	'uses'=>'KatakanaController@index',
+	'as' => 'katakana_view'
+]);
+
+Route::post('/katakana',[
+	'uses'=>'KatakanaController@checkAnswer',
+	'as' => 'katakana_check_answer'
+]);
+
 Route::get('/vocabulary',[
 	'uses'=>'VocabularyController@index',
 	'as' => 'vocabulary_view'

@@ -28,6 +28,10 @@ class AppServiceProvider extends ServiceProvider
             'App\Repositories\HiraganasRepository'
         );
         $this->app->bind(
+            'App\Repositories\Interfaces\KatakanasRepositoryInterface',
+            'App\Repositories\KatakanasRepository'
+        );
+        $this->app->bind(
             'App\Repositories\Interfaces\VocabulariesRepositoryInterface',
             'App\Repositories\VocabulariesRepository'
         );

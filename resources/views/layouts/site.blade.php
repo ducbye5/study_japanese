@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <a class="btn btn-outline-danger" href="{{ route('hiragana_view') }}">Hiragana</a>
-                        <a class="btn btn-outline-danger" href="">Katakana</a>
+                        <a class="btn btn-outline-danger" href="{{ route('katakana_view') }}">Katakana</a>
                         <a class="btn btn-outline-danger" href="">Kanji</a>
                         <a class="btn btn-outline-danger" href="{{ route('vocabulary_view') }}">Vocabulary</a>
                         <hr>
