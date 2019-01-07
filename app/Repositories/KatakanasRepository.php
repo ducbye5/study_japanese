@@ -13,10 +13,10 @@ class KatakanasRepository implements KatakanasRepositoryInterface
 		$this->model = $Katakana;
 	}
 
-	public function getList(array $column = ['*']){
+	public function getList(array $column = ['*'],$limit = ''){
 		$query = $this->model->select($column);
 		if($column == ['*']){
-			$result = $query->paginate(1);
+			$result = $query->paginate($limit);
 		}else{
 			$result = $query->get();
 		}

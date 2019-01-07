@@ -4,5 +4,5 @@ namespace App\Repositories\Interfaces;
 
 interface KatakanasRepositoryInterface
 {
-	public function getList(array $column = ['*']);
+	public function getList(array $column ,$limit);
 }

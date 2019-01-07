@@ -32,7 +32,6 @@ class HiraganaController extends Controller
     	if($result){
     		$url = $input['nextPage'];
     		$url = str_replace('http://localhost/study_japanese/public/','',$url);
-    		//\Session::flash('success','The answer is TRUE. Please click the NEXT button for the next question');
     		return redirect(url($url));
     	}else{
     		return redirect()->route('hiragana_view');

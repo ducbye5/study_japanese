@@ -17,23 +17,25 @@ class VocabularyService
 
 	public function index(){
 		//$this->insert_Data_Vocabulary();
-		$question_and_answer = $this->vocabulariesRepository->getList();
-		$question = $question_and_answer[0]->characters;
-		$answer = $question_and_answer[0]->mean;
-		$list_mean = $this->vocabulariesRepository->getList(['mean']);
-		$list_mean = $list_mean->all();
-		for($i =0 ;$i< count($list_mean);$i++){
-			if($list_mean[$i]->mean == $answer){
-				unset($list_mean[$i]);
-				break;
+		$question_and_answer = $this->vocabulariesRepository->getList(['*'],10);
+		for($i = 0 ;$i < count($question_and_answer); $i++){
+			$question[$i] = $question_and_answer[$i]->characters;
+			$answer[$i] = $question_and_answer[$i]->mean;
+			$list_mean = $this->vocabulariesRepository->getList(['mean']);
+			$list_mean = $list_mean->all();
+			for($j =0 ;$j< count($list_mean);$j++){
+				if($list_mean[$j]->mean == $answer[$i]){
+					unset($list_mean[$j]);
+					break;
+				}
 			}
+			$list_select_result_false = array_rand($list_mean,3);
+			for($y=0;$y<count($list_select_result_false);$y++){
+				$list_select_result[$i][$y] = $list_mean[$list_select_result_false[$y]]->mean;
+			}
+			$list_select_result[$i] = array_merge($list_select_result[$i],[$answer[$i]]);
+			shuffle($list_select_result[$i]);
 		}
-		$list_select_result_false = array_rand($list_mean,3);
-		for($i=0;$i<count($list_select_result_false);$i++){
-			$list_select_result[$i] = $list_mean[$list_select_result_false[$i]]->mean;
-		}
-		$list_select_result = array_merge($list_select_result,[$answer]);
-		shuffle($list_select_result);
 		$view = 'Vocabulary';
 		$next_page = $question_and_answer->nextPageUrl();
 		if($next_page == ''){
@@ -52,7 +54,7 @@ class VocabularyService
 	}
 
 	public function checkAnswer($input){
-		if($input['select_answer'] == $input['result']){
+		if(!empty($input['data']['select']) && ($input['data']['select'] == $input['data']['anwser'])){
 			$status = true;
 		}else{
 			$status = false;

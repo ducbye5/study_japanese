@@ -17,23 +17,25 @@ class KatakanaService
 
 	public function index(){
 		//$this->insert_Data_Hiragana();
-		$question_and_answer = $this->katakanasRepository->getList();
-		$question = $question_and_answer[0]->characters;
-		$answer = $question_and_answer[0]->pronunciation;
-		$list_pronunciation = $this->katakanasRepository->getList(['pronunciation']);
-		$list_pronunciation = $list_pronunciation->all();
-		for($i =0 ;$i< count($list_pronunciation);$i++){
-			if($list_pronunciation[$i]->pronunciation == $answer){
-				unset($list_pronunciation[$i]);
-				break;
+		$question_and_answer = $this->katakanasRepository->getList(['*'],10);
+		for($i = 0 ;$i < count($question_and_answer); $i++){
+			$question[$i] = $question_and_answer[$i]->characters;
+			$answer[$i] = $question_and_answer[$i]->pronunciation;
+			$list_pronunciation = $this->katakanasRepository->getList(['pronunciation']);
+			$list_pronunciation = $list_pronunciation->all();
+			for($j =0 ;$j< count($list_pronunciation);$j++){
+				if($list_pronunciation[$j]->pronunciation == $answer[$i]){
+					unset($list_pronunciation[$j]);
+					break;
+				}
 			}
+			$list_select_result_false = array_rand($list_pronunciation,3);
+			for($y=0;$y<count($list_select_result_false);$y++){
+				$list_select_result[$i][$y] = $list_pronunciation[$list_select_result_false[$y]]->pronunciation;
+			}
+			$list_select_result[$i] = array_merge($list_select_result[$i],[$answer[$i]]);
+			shuffle($list_select_result[$i]);
 		}
-		$list_select_result_false = array_rand($list_pronunciation,3);
-		for($i=0;$i<count($list_select_result_false);$i++){
-			$list_select_result[$i] = $list_pronunciation[$list_select_result_false[$i]]->pronunciation;
-		}
-		$list_select_result = array_merge($list_select_result,[$answer]);
-		shuffle($list_select_result);
 		$view = 'Katakana';
 		$next_page = $question_and_answer->nextPageUrl();
 		if($next_page == ''){
@@ -52,7 +54,7 @@ class KatakanaService
 	}
 
 	public function checkAnswer($input){
-		if($input['select_answer'] == $input['result']){
+		if(!empty($input['data']['select']) && ($input['data']['select'] == $input['data']['anwser'])){
 			$status = true;
 		}else{
 			$status = false;

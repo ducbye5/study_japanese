@@ -13,10 +13,10 @@ class VocabulariesRepository implements VocabulariesRepositoryInterface
 		$this->model = $Vocabulary;
 	}
 
-	public function getList(array $column = ['*']){
+	public function getList(array $column = ['*'],$limit = ''){
 		$query = $this->model->select($column);
 		if($column == ['*']){
-			$result = $query->paginate(1);
+			$result = $query->paginate($limit);
 		}else{
 			$result = $query->get();
 		}
