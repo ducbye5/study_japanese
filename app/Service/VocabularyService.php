@@ -17,7 +17,7 @@ class VocabularyService
 
 	public function index(){
 		//$this->insert_Data_Vocabulary();
-		$question_and_answer = $this->vocabulariesRepository->getList(['*'],10);
+		$question_and_answer = $this->vocabulariesRepository->getList(['*'],9);
 		for($i = 0 ;$i < count($question_and_answer); $i++){
 			$question[$i] = $question_and_answer[$i]->characters;
 			$answer[$i] = $question_and_answer[$i]->mean;

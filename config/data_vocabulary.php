@@ -2,103 +2,79 @@
 
 return [
 	0 => [
-		'characters' => 'Ohayou (gozaimasu)',
-		'mean' => 'Chào buổi sáng'
+		'characters' => '本(ほん)(hon)',
+		'mean' => 'Cuốn sách'
 	],
 	1 => [
-		'characters' => 'Konnichiwa',
-		'mean' => 'Chào buổi chiều'
+		'characters' => '(ペン)(pen)',
+		'mean' => 'Cái bút'
 	],
 	2 => [
-		'characters' => 'Kombanwa',
-		'mean' => 'Chào buổi tối'
+		'characters' => '鉛筆(えんぴつ)(enpitsu)',
+		'mean' => 'Cái bút chì'
 	],
 	3 => [
-		'characters' => 'Oyasumi (nasai)',
-		'mean' => 'Chúc ngủ ngon'
+		'characters' => '財布(さいふ)(saifu)',
+		'mean' => 'Cái ví'
 	],
 	4 => [
-		'characters' => 'Sayounara / Jamata',
-		'mean' => 'Tạm biệt'
+		'characters' => '(カード)(kado)',
+		'mean' => 'Thẻ(card)'
 	],
 	5 => [
-		'characters' => 'Sumimasen / Gomen (nasai)',
-		'mean' => 'Xin lỗi'
+		'characters' => '名刺(めいし)(meishi)',
+		'mean' => 'Danh thiếp'
 	],
 	6 => [
-		'characters' => 'Arigatou',
-		'mean' => 'Cảm ơn'
+		'characters' => 'お金(おかね)(okane)',
+		'mean' => 'Tiền'
 	],
 	7 => [
-		'characters' => 'Itadakimasu',
-		'mean' => 'Lời nói trước lúc ăn'
+		'characters' => '鍵(かぎ)(kagi)',
+		'mean' => 'Chìa khóa'
 	],
 	8 => [
-		'characters' => 'Gochisou (samadeshita)',
-		'mean' => 'Lời nói sau lúc ăn'
+		'characters' => '(バッグ)(baggu)',
+		'mean' => 'Túi'
 	],
 	9 => [
-		'characters' => 'Hajimemashite',
-		'mean' => 'Lần đầu gặp mặt'
+		'characters' => '(テレビ)(terebi)',
+		'mean' => 'Ti vi'
 	],
 	10 => [
-		'characters' => 'Watashi wa A desu',
-		'mean' => 'Tôi tên là A'
+		'characters' => '電話(でんわ)(denwa)',
+		'mean' => 'Điện thoại'
 	],
 	11 => [
-		'characters' => 'Shusshin wa A desu',
-		'mean' => 'Quê quán tôi là A'
+		'characters' => '携帯電話(げいたいでんわ)(geitaidenwa)',
+		'mean' => 'Điện thoại di động'
 	],
 	12 => [
-		'characters' => 'Douzo yoroshiku onegaishimasu',
-		'mean' => 'Rất mong được giúp đỡ'
+		'characters' => '(カメラ)(camera)',
+		'mean' => 'Máy ảnh'
 	],
 	13 => [
-		'characters' => 'あうい',
-		'mean' => 'Màu xanh da trời'
+		'characters' => '(コンピュータ)(konpita)',
+		'mean' => 'Máy tính'
 	],
 	14 => [
-		'characters' => 'うえ',
-		'mean' => 'Ở phía trên'
+		'characters' => '(テーブル)(teburu)',
+		'mean' => 'Cái bàn'
 	],
 	15 => [
-		'characters' => 'いえ',
-		'mean' => 'Nhà (House)'
+		'characters' => '(いす)(isu)',
+		'mean' => 'Cái ghế'
 	],
 	16 => [
-		'characters' => 'あう',
-		'mean' => 'Gặp gỡ'
+		'characters' => '(めがね)(megane)',
+		'mean' => 'Kính'
 	],
 	17 => [
-		'characters' => 'いい',
-		'mean' => 'Tốt (Good)'
+		'characters' => '(ノート)(noto)',
+		'mean' => 'quyển vở ghi nhớ'
 	],
 	18 => [
-		'characters' => 'いけ',
-		'mean' => 'Cái áo'
-	],
-	19 => [
-		'characters' => 'かお',
-		'mean' => 'Khuôn mặt'
-	],
-	20 => [
-		'characters' => 'かく',
-		'mean' => 'Viết, Vẽ'
-	],
-	21 => [
-		'characters' => 'きく',
-		'mean' => 'Nghe nhạc'
-	],
-	22 => [
-		'characters' => 'ここ',
-		'mean' => 'Ở đây'
-	],
-	23 => [
-		'characters' => 'こうこう',
-		'mean' => 'Trường cấp 3'
-	],
-	24 => [
-		'characters' => 'き',
-		'mean' => 'Cái cây , Gỗ'
+		'characters' => '時計(とけい)(tokei)',
+		'mean' => 'đồng hồ'
 	],
 ];

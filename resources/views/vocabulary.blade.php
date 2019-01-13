@@ -13,7 +13,7 @@
 		 	$id = $rows->id;
 		 	$characters = $rows->characters;
 		 	$list_result = $data['select'][$stt];
-		 	$anwser = $rows->pronunciation;
+		 	$anwser = $rows->mean;
 		 	$A = $list_result[0];
 		 	$B = $list_result[1];
 		 	$C = $list_result[2];

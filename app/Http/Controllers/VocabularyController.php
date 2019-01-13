@@ -29,12 +29,12 @@ class VocabularyController extends Controller
     public function checkAnswer(Request $request){
     	$input = $request->all();
     	$result = $this->vocabularyService->checkAnswer($input);
+        $url = $input['nextPage'];
+        $url = str_replace('http://localhost/study_japanese/public/','',$url);
     	if($result){
-    		$url = $input['nextPage'];
-    		$url = str_replace('http://localhost/study_japanese/public/','',$url);
-    		//\Session::flash('success','The answer is TRUE. Please click the NEXT button for the next question');
     		return redirect(url($url));
     	}else{
+            return redirect(url($url));
     		return redirect()->route('vocabulary_view');
     	}
     }
