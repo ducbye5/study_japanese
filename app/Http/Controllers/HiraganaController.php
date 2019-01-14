@@ -16,21 +16,21 @@ class HiraganaController extends Controller
 	}
 
     public function index(){
-    	$result = $this->hiraganaService->index();
-        if($result == 'finish'){
-            return redirect()->route('hiragana_view');
-        }else{    
-            $view = $result['view'];
-            $data = $result['data'];
-    	   return view($view,['data'=>$data]);
-        }
+    	$result = $this->hiraganaService->index();    
+        $view = $result['view'];
+        $data = $result['data'];
+    	return view($view,['data'=>$data]);
     }
 
     public function checkAnswer(Request $request){
     	$input = $request->all();
     	$result = $this->hiraganaService->checkAnswer($input);
         $url = $input['nextPage'];
-        $url = str_replace('http://localhost/study_japanese/public/','',$url);
+        if(!empty($url)){
+            $url = str_replace('http://localhost/study_japanese/public/','',$url);
+        }else{
+            $url = 'hiragana';
+        }
     	if($result){
     		return redirect(url($url));
     	}else{
