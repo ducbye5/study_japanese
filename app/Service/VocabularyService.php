@@ -16,7 +16,7 @@ class VocabularyService
 	}
 
 	public function index(){
-		//$this->insert_Data_Vocabulary();
+		// $this->insert_Data_Vocabulary();
 		$question_and_answer = $this->vocabulariesRepository->getList(['*'], 15);
 		for($i = 0 ;$i < count($question_and_answer); $i++){
 			$question[$i] = $question_and_answer[$i]->characters;
