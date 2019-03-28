@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Laravel\Dusk\DuskServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -35,5 +36,8 @@ class AppServiceProvider extends ServiceProvider
             'App\Repositories\Interfaces\VocabulariesRepositoryInterface',
             'App\Repositories\VocabulariesRepository'
         );
+        if ($this->app->environment('local', 'testing')) {
+            $this->app->register(DuskServiceProvider::class);
+        }
     }
 }
